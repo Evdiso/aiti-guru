@@ -31,13 +31,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install React dependencies
-        run: |
-          cd aiti-guru
-          npm ci
+        run: npm ci
       - name: Build React app
-        run: |
-          cd aiti-guru
-          npm run build
+        run: npm run build
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
