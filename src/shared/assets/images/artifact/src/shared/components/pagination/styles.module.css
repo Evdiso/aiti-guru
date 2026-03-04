@@ -1,0 +1,30 @@
+.container {
+}
+
+.container > nav > ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  grid-column-gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.container > nav > ul > li {
+  display: flex;
+}
+
+.arrow {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.arrow.right {
+  transform: rotate(180deg);
+}

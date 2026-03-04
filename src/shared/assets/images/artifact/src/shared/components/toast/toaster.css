@@ -1,0 +1,113 @@
+[data-scope="toast"][data-part="root"] {
+  width: max-content;
+  min-width: 200px;
+  padding: 8px 12px;
+  overflow-wrap: anywhere;
+
+  translate: var(--x) var(--y);
+  scale: var(--scale);
+  z-index: var(--z-notification);
+  height: auto;
+  opacity: var(--opacity);
+  border-radius: 12px;
+
+  will-change: translate, opacity, scale;
+  transition:
+    translate 400ms,
+    scale 400ms,
+    opacity 400ms;
+  transition-timing-function: cubic-bezier(0.21, 1.02, 0.73, 1);
+
+  display: flex;
+  align-items: flex-start;
+}
+
+[data-scope="toast"][data-part="root"].without-title {
+  align-items: center;
+}
+
+[data-scope="toast"][data-part="root"].toast-icon {
+  padding: 8px 12px 8px 39px;
+}
+
+[data-scope="toast"][data-part="root"].toast-logo {
+  padding: 8px 12px 8px 64px;
+}
+
+[data-scope="toast"][data-part="root"].toast-logo > .media {
+  margin-left: 0;
+}
+
+[data-scope="toast"][data-part="root"] > .media.toast-icon {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  height: 24px;
+}
+
+[data-scope="toast"][data-part="root"] > .media.toast-logo {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+[data-scope="toast"][data-part="root"] > .media.toast-logo > div {
+  max-width: 44px;
+  max-height: 44px;
+}
+
+[data-scope="toast"][data-part="root"][data-type="success"],
+[data-scope="toast"][data-part="root"][data-type="error"] {
+  background-color: white;
+}
+
+[data-scope="toast"][data-part="root"][data-type="success"] {
+  color: #008000;
+  border: 1px solid #008000;
+  background: #f2f9f2;
+}
+
+[data-scope="toast"][data-part="root"][data-type="error"] {
+  color: var(--danger-text);
+  border: 1px solid var(--danger-text);
+  background: #fef3f3;
+}
+
+[data-scope="toast"][data-part="root"][data-type="info"] {
+  color: var(--primary-text);
+}
+
+[data-scope="toast"][data-part="root"][data-state="closed"] {
+  transition:
+    translate 400ms,
+    scale 400ms,
+    opacity 200ms;
+  transition-timing-function: cubic-bezier(0.06, 0.71, 0.55, 1);
+}
+
+[data-scope="toast"][data-part="close-trigger"] {
+  display: flex;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+[data-scope="toast"][data-part="title"] {
+  font-family: "MTS Compact", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+[data-scope="toast"][data-part="description"] {
+  font-family: "MTS Compact", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+@media (max-width: 767px) {
+  [data-scope="toast"][data-part="root"] {
+    max-width: 280px;
+  }
+}

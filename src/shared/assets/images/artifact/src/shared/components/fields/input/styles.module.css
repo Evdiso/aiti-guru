@@ -1,0 +1,93 @@
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  border-radius: 12px;
+  border: 1.5px solid var(--border);
+  background: #fff;
+
+  display: flex;
+  width: 100%;
+  padding: 14px 16px;
+  align-items: center;
+
+  color: var(--primary-text);
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.27px;
+
+  &::placeholder {
+    color: var(--secondary-text-light);
+  }
+}
+
+.field-invalid {
+  border-color: var(--danger-text);
+}
+
+.input[dataview="secondary"] {
+  background: var(--bg-secondary);
+}
+
+.input[datasize="l"] {
+  padding: 14px 16px;
+}
+
+.input[datasize="m"] {
+  padding: 12px 20px;
+}
+
+.input[datasize="l"].with-icon-left {
+  padding-left: 54px;
+}
+.input[datasize="m"].with-icon-left {
+  padding-left: 52px;
+}
+
+.label {
+  color: var(--primary-text);
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.27px;
+}
+
+.label + .input-wrapper {
+  margin-top: 6px;
+}
+
+.icon-left {
+  left: 0;
+  width: fit-content;
+  position: absolute;
+  display: inline-flex;
+  inset-inline-end: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  font-weight: 500;
+  padding-left: 16px;
+}
+
+.iconLeftSize {
+  padding-left: 20px;
+}
+
+.error {
+  padding-top: 2px;
+  font-size: 14px;
+  color: var(--danger-text);
+}

@@ -1,0 +1,22 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    background: #fff;
+    padding: 6px;
+    box-shadow: 0 24px 32px 0 rgba(0, 0, 0, 0.04);
+}
+
+.form-wrapper-content {
+    display: grid;
+    row-gap: 32px;
+
+    border-radius: 34px;
+    padding: 48px;
+    border: 1px solid var(--border);
+    background: linear-gradient(
+        180deg,
+        rgba(35, 35, 35, 0.03) 0%,
+        rgba(35, 35, 35, 0) 50%
+    );
+}

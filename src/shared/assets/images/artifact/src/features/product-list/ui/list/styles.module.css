@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+  padding: 30px;
+}
+
+.title {
+  color: var(--primary-text);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+}
+
+.add {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 8px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}

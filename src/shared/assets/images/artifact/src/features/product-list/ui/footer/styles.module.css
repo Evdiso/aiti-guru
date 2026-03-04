@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 31px 20px 40px 20px;
+}
+
+.info {
+  color: var(--secondary-text-light);
+}
