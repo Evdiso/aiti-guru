@@ -1,0 +1,27 @@
+.container {
+  padding: 8px;
+}
+
+.title {
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 32px;
+}
+
+.actions > button {
+  width: 100%;
+}

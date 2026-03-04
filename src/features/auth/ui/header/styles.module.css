@@ -1,0 +1,61 @@
+.wrapper {
+    display: grid;
+    row-gap: 32px;
+}
+
+.logo {
+    margin: 0 auto;
+    display: flex;
+    width: 52px;
+    height: 52px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    border: 1px solid rgba(237, 237, 237, 0.7);
+    background:
+        linear-gradient(
+            0deg,
+            rgba(35, 35, 35, 0) 50%,
+            rgba(35, 35, 35, 0.06) 100%
+        ),
+        #fff;
+    box-shadow:
+        0 0 0 2px #fff,
+        0 12px 8px 0 rgba(0, 0, 0, 0.03);
+}
+
+.title {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    & > h1 {
+        color: var(--primary-text);
+        text-align: center;
+        font-feature-settings:
+            "liga" off,
+            "clig" off;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -0.6px;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    & > span {
+        color: var(--secondary-text-ghost);
+        text-align: center;
+        font-feature-settings:
+            "liga" off,
+            "clig" off;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+    }
+}
